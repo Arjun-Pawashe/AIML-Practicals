@@ -1,0 +1,39 @@
+====================================================
+ Vacuum Cleaner World Agent - Sample Input/Output
+====================================================
+
+--------------------------------------------------
+Test Case 1
+Input state : dirty(a), dirty(b); vacuum starts at room a
+Expected    : clean a -> move to b -> clean b -> stop
+--------------------------------------------------
+
+?- start.
+Vacuum cleaned room a.
+Vacuum moved to room b.
+Vacuum cleaned room b.
+All rooms are clean. Stopping...
+true.
+
+--------------------------------------------------
+Test Case 2
+Input state : no dirty/1 facts asserted; vacuum starts at room a
+Expected    : agent stops immediately (world already clean)
+--------------------------------------------------
+
+?- start.
+All rooms are clean. Stopping...
+true.
+
+--------------------------------------------------
+Test Case 3
+Input state : dirty(c) only; vacuum starts at room a (chain a-b-c)
+Expected    : move a -> b -> move b -> c -> clean c -> stop
+--------------------------------------------------
+
+?- start.
+Vacuum moved to room b.
+Vacuum moved to room c.
+Vacuum cleaned room c.
+All rooms are clean. Stopping...
+true.
