@@ -1,0 +1,55 @@
+====================================================
+ Car Fault Diagnostic Expert System - Sample I/O
+====================================================
+
+--------------------------------------------------
+Test Case 1
+Input   : fail to start = y; engine refuses to crank = y
+Expected: Dead or weak battery
+--------------------------------------------------
+
+?- start.
+--- CAR DIAGNOSTIC SYSTEM ---
+Answer with y. or n.
+
+Does the car fail to start? (y/n): |: y.
+Does the engine refuse to crank? (y/n): |: y.
+
+-> RESULT: Dead or weak battery.
+true.
+
+--------------------------------------------------
+Test Case 2
+Input   : fail to start = y; refuses to crank = n; clicking sound = y
+Expected: Faulty starter motor
+--------------------------------------------------
+
+?- start.
+--- CAR DIAGNOSTIC SYSTEM ---
+Answer with y. or n.
+
+Does the car fail to start? (y/n): |: y.
+Does the engine refuse to crank? (y/n): |: n.
+Does the car fail to start? (y/n): |: y.
+Do you hear a clicking sound? (y/n): |: y.
+
+-> RESULT: Faulty starter motor.
+true.
+
+--------------------------------------------------
+Test Case 3
+Input   : fail to start = n; engine sputters = n
+Expected: Unable to determine the issue; consult a mechanic
+--------------------------------------------------
+
+?- start.
+--- CAR DIAGNOSTIC SYSTEM ---
+Answer with y. or n.
+
+Does the car fail to start? (y/n): |: n.
+Does the car fail to start? (y/n): |: n.
+Does the engine sputter? (y/n): |: n.
+Does the engine sputter? (y/n): |: n.
+
+-> RESULT: Unable to determine the issue. Consult a mechanic.
+true.
