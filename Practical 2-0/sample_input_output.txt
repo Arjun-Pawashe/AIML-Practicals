@@ -1,0 +1,42 @@
+=================================================================
+  Search Algorithm Performance Evaluation - Sample Run
+=================================================================
+
+$ python search_algorithms.py
+
+=================================================================
+  Search Algorithm Performance Evaluation
+=================================================================
+
+Graph Problem  |  Start: S  ->  Goal: Z
+
+Algorithm      Path                          Cost      Nodes    Time(s)
+-----------------------------------------------------------------------
+BFS            S -> A -> D -> Z              N/A           8   0.000022
+DFS            S -> A -> D -> Z              N/A           4   0.000011
+UCS            S -> C -> F -> E -> Z         9             9   0.000025
+Greedy BFS     S -> B -> E -> Z              13            4   0.000009
+A*             S -> C -> F -> E -> Z         9             5   0.000008
+
+N-Queens Problem  (N = 10)
+
+Algorithm            Board (col->row)                    Conflicts  Nodes   Time(s)
+-------------------------------------------------------------------------------------
+Hill Climbing        [5, 7, 1, 6, 0, 2, 4, 8, 3, 9]           0        3    0.002042
+Simul. Annealing     [2, 7, 1, 4, 8, 5, 9, 4, 6, 0]           1     1838    0.017167
+Backtracking         [0, 2, 5, 7, 9, 4, 8, 1, 3, 6]           0      975    0.000604
+Forward Checking     [0, 2, 5, 8, 6, 9, 3, 1, 4, 7]           0       68    0.000282
+=================================================================
+
+(Two matplotlib windows also open: "Graph Search Algorithms - Performance
+Comparison" and "N-Queens Algorithms - Performance Comparison", each showing
+grouped bar charts for nodes explored, execution time, and cost/conflicts.
+See performance_chart.png in this folder for the graph-search chart.)
+
+-------------------------------------------------------------------------------
+NOTE: Exact N-Queens numbers (board, conflicts, nodes, time) can vary slightly
+between machines/Python versions even with random.seed(42) fixed, because
+Simulated Annealing and Hill Climbing depend on the platform's random-number
+sequence and floating-point timing. The graph-search results (BFS/DFS/UCS/
+Greedy BFS/A*) are deterministic and will always match exactly.
+-------------------------------------------------------------------------------
