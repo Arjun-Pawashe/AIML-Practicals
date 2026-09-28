@@ -45,4 +45,4 @@ Place the CSV in the same folder, then run the script or the notebook cells in o
 - Feature scaling is essential for fast, stable convergence.
 
 ## Author
-[Your Name]
+Arjun Pawashe 202401100112
