@@ -1,0 +1,11 @@
+Input : house_prices_expanded_dataset-v2.csv
+        Features: Area_sqft, Bedrooms, Bathrooms, Age_years | Target: Price_1000s
+        Train/test split: 80/20, random_state=42
+        Gradient descent: learning_rate=0.05, iterations=500 (standardised features)
+
+Output:
+Simple Linear Regression -> MAE: 30.20, MSE: 1367.58, RMSE: 36.98, R2: 0.9085
+Multiple Linear Regression -> MAE: 12.70, MSE: 219.39, RMSE: 14.81, R2: 0.9853
+Gradient Descent Linear Regression -> MAE: 12.70, MSE: 219.39, RMSE: 14.81, R2: 0.9853
+
+Plot saved: cost_convergence.png (cost falls from ~71,000 and flattens after ~100 iterations)
