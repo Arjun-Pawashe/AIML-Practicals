@@ -1,0 +1,38 @@
+--- Support Vector Machine Performance ---
+Accuracy : 0.9200
+Precision: 0.8824
+Recall   : 0.9574
+F1-Score : 0.9184
+Log Loss : 0.2275
+
+--- Decision Tree Performance ---
+Accuracy : 0.7600
+Precision: 0.7300
+Recall   : 0.7766
+F1-Score : 0.7526
+Log Loss : 1.2307
+
+--- K-Nearest Neighbors Performance ---
+Accuracy : 0.9100
+Precision: 0.8878
+Recall   : 0.9255
+F1-Score : 0.9062
+Log Loss : 0.5622
+
+--- Naïve Bayes Performance ---
+Accuracy : 0.7500
+Precision: 0.7075
+Recall   : 0.7979
+F1-Score : 0.7500
+Log Loss : 0.5142
+
+=====================================================================
+                      COMPARATIVE ANALYSIS SUMMARY
+=====================================================================
+                        Accuracy  Precision  Recall  F1-Score  Log Loss
+Support Vector Machine      0.92     0.8824  0.9574    0.9184    0.2275
+Decision Tree               0.76     0.7300  0.7766    0.7526    1.2307
+K-Nearest Neighbors         0.91     0.8878  0.9255    0.9062    0.5622
+Naïve Bayes                 0.75     0.7075  0.7979    0.7500    0.5142
+=====================================================================
+

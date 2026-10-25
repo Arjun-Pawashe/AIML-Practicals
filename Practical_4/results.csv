@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1-Score,Log Loss
+Support Vector Machine,0.92,0.8824,0.9574,0.9184,0.2275
+Decision Tree,0.76,0.73,0.7766,0.7526,1.2307
+K-Nearest Neighbors,0.91,0.8878,0.9255,0.9062,0.5622
+Naïve Bayes,0.75,0.7075,0.7979,0.75,0.5142
