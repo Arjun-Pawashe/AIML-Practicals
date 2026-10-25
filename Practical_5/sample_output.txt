@@ -1,0 +1,30 @@
+--- K-Means Performance ---
+Estimated Clusters: 3
+Noise Points       : 0
+Silhouette Score   : 0.4599 (Higher is better)
+Davies-Bouldin Index: 0.8336 (Lower is better)
+Calinski-Harabasz  : 241.9044 (Higher is better)
+
+--- Agglomerative Clustering Performance ---
+Estimated Clusters: 3
+Noise Points       : 0
+Silhouette Score   : 0.4467 (Higher is better)
+Davies-Bouldin Index: 0.8035 (Lower is better)
+Calinski-Harabasz  : 222.7192 (Higher is better)
+
+--- DBSCAN Performance ---
+Estimated Clusters: 2
+Noise Points       : 26
+Silhouette Score   : 0.6419 (Higher is better)
+Davies-Bouldin Index: 0.5121 (Lower is better)
+Calinski-Harabasz  : 330.9165 (Higher is better)
+
+=====================================================================
+                   CLUSTERING EVALUATION SUMMARY
+=====================================================================
+                          Clusters  Silhouette Score  Davies-Bouldin Index  Calinski-Harabasz Index
+K-Means                        3.0            0.4599                0.8336                 241.9044
+Agglomerative Clustering       3.0            0.4467                0.8035                 222.7192
+DBSCAN                         2.0            0.6419                0.5121                 330.9165
+=====================================================================
+
